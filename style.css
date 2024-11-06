@@ -1,0 +1,104 @@
+body{
+    font-family: "Roboto", serif;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.img{
+    display: flex;
+    width: 40%;
+    height: 96%;
+    margin: 1%, 1%, 1%, 1%;
+    background: url(./assets/hotel-front.jpg) no-repeat center;
+    background-size: cover;
+    align-content: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.img-desc{
+    margin-top: auto;
+    margin-bottom: 10px;
+    font-size: 100%;
+    color: white;
+    font-weight: 900;
+}
+
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.form{
+    width: 60%;
+    margin: 0;
+    padding: 0;
+    margin-top: 5%;
+}
+
+.form > *{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.form-label{
+    font-weight: 900;
+    font-size: 20px;
+    display: block;
+    transition: all 0.5s;
+    transform: translateY(-3.4rem);
+}
+
+.form-input{
+    border: 2px solid grey;
+    color: #333;
+    font-size: 1.2rem;
+    padding: 0.2rem 0.2rem;
+    border-radius: 0.2rem;
+    width: 100%;
+    display: block;
+    transition: all 0.5s;
+    margin-top: 5%;
+    /*margin-right: 10%;*/
+}
+
+.form-input:focus{
+    transition: 0.2s;
+    outline: none;
+    border: 2px solid blue;
+}
+
+.form-input:placeholder-shown + .form-label{
+    opacity: 0;
+    visibility: hidden;
+}
+
+form{
+    padding-top: 3%;
+    width: 80%;
+    margin-left: 0%;
+    background-color: rgba(0, 0, 0, 0.034);
+}
+
+.fields-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+    grid-gap: 1.5rem;                
+    width: 100%;                     
+    padding: 10%;                    
+}
+
+.fields{
+    display: flex;
+    flex-direction: row;
+} 
+
+.fields> :last-child{
+    padding-left: 0;
+    padding-right: 0;
+}
