@@ -98,7 +98,7 @@ form{
     flex-direction: row;
 } 
 
-.fields> :last-child{
+/*.fields> :last-child{
     padding-left: 0;
     padding-right: 0;
-}
+}*/
